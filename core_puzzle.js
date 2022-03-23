@@ -54,7 +54,7 @@ function createMainBody(){
 	let s = '';
 
 	for(let i=0; i<Object.keys(json).length; i++){
-		s+= '<div class="grid" id="grid'+i+'" style="top: ' + ((Math.floor(i/2))*600+100) + 'px; left: ' + ((i%2)*900+100) + 'px;"></div>';
+		s+= '<div class="grid" id="grid'+i+'" style="top: ' + ((Math.floor(i/2))*600+100) + 'px; left: ' + ((i%2)*800+100) + 'px;"></div>';
 	}
 
 	document.querySelector('#all_body').insertAdjacentHTML('beforeend', s);
