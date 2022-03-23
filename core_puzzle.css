@@ -18,12 +18,17 @@ body {
 	left: 100px;
 }
 
-#import_button_label {
+#subtitle {
+	font-size: 150%;
 	position: absolute;
+	width: 1200px;
+	height: 80px;
 	top: 40px;
-	left: 600px;
-	width: 73px;
-	height: 30px;
+	left: 350px;
+}
+
+#import_button_label, #export_button, #add_blank_button {
+	position: absolute;
 	color: #424242;
 	background-color: white;
 	border: 0;
@@ -34,22 +39,42 @@ body {
 	align-items: center;
 	margin: 0px 5px 5px 0px;
 }
-#import_button_label:hover {
+#import_button_label:hover, #export_button, #add_blank_button  {
 	background-color: #f8f8f8;
 }
-#import_button_label:active {
+#import_button_label:active, #export_button, #add_blank_button  {
 	background-color: #ffffff;
 }
 #import_button {
 	display: none;
 }
 
+#import_button_label {
+	top: 40px;
+	left: 600px;
+	width: 73px;
+	height: 30px;
+}
+
+#export_button {
+	top: 40px;
+	left: 700px;
+	width: 73px;
+	height: 30px;
+}
+#add_blank_button {
+	top: 40px;
+	left: 800px;
+	width: 73px;
+	height: 30px;
+}
+
 .grid {
 	position: absolute;
-	width: 600px;
-	height: 450px;
+	width: 580px;
+	height: 430px;
 	background-color: #fff;
-	border: solid 1px;
+	border: none;
 }
 
 .cr {
@@ -60,6 +85,7 @@ body {
 	height: 30px;
 	background-color: #fff;
 	border: solid 1px;
+	border-color: #202020;
 	border-radius: 0px;
 }
 
@@ -76,6 +102,7 @@ body {
 .crtext {
 	text-align: center;
 	font-size: 60%;
+	color: #101010;
 }
 
 .gridtitle {
