@@ -15,7 +15,7 @@ function import_button_handler(){
 }
 
 document.getElementById('export_button').addEventListener('click', e => {
-	const input_text = JSON.stringify(json);
+	const input_text = JSON.stringify(json, null, '\t');
 	const blob = new Blob([input_text], {type: 'text/plain'});
 	const a = document.createElement('a');
 	a.href =  URL.createObjectURL(blob);
